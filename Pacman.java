@@ -13,7 +13,7 @@ class TheProgram extends Applet implements KeyListener
 	{
 		addKeyListener(this);
 	}
-	public void keyPressed( KeyEvent e )
+	public void keyPressed( KeyEvent ke )
 	{
 		int key=ke.getKeyCode();
 		switch(key)
@@ -32,9 +32,9 @@ class TheProgram extends Applet implements KeyListener
 						break;
 		}
 	}
-	public void keyReleased( KeyEvent e)
+	public void keyReleased( KeyEvent ke)
 	{}
-	public void keyTyped( KeyEvent e)
+	public void keyTyped( KeyEvent ke)
 	{}
 	public void paint( Graphics g)
 	{}
