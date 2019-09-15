@@ -2,11 +2,42 @@
 <applet code=TheProgram height=1000 width =1000>
 </applet>
 */
-
+import java.applet.*;
+import java.awt.*;
+import java.awt.event.*;
 import java.util.*;
 
-class TheProgram
+class TheProgram extends Applet implements KeyListener
 {
+	public void init()
+	{
+		addKeyListener(this);
+	}
+	public void keyPressed( KeyEvent e )
+	{
+		int key=ke.getKeyCode();
+		switch(key)
+		{
+			case KeyEvent.VK_LEFT: 
+						// Move Player LEFT
+						break;
+			case KeyEvent.VK_RIGHT:
+						// Move Player RIGHT
+						break;
+			case KeyEvent.VK_UP:
+						// Move Player UP
+						break;
+			case KeyEvent.VK_DOWN:
+						// Move Player DOWN
+						break;
+		}
+	}
+	public void keyReleased( KeyEvent e)
+	{}
+	public void keyTyped( KeyEvent e)
+	{}
+	public void paint( Graphics g)
+	{}
 	public static main void{String args[])
 	{
 		int exit=0, c;
